@@ -2,7 +2,7 @@ spring:
   jpa:
     database: postgresql
     hibernate:
-      ddl-auto: create #create update none
+      ddl-auto: update #create update none
     properties:
       hibernate:
         format_sql: true
@@ -16,5 +16,11 @@ spring:
     hikari:
       maximum-pool-size: 4
       driver-class-name: org.postgresql.Driver
+
+jwt:
+  secret:
+    key: com.kim_ji_su.study.sns-application-2022.secret_key
+  #30 days
+  token.expired-time-ms: 2592000000
 
 
