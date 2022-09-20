@@ -46,6 +46,7 @@ import Slide from '@mui/material/Slide';
 
 // Data
 import axios from 'axios';
+import {TransitionProps} from "@mui/material/transitions";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {

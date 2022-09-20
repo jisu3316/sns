@@ -16,11 +16,8 @@ spring:
     hikari:
       maximum-pool-size: 4
       driver-class-name: org.postgresql.Driver
-
 jwt:
-  secret:
-    key: com.kim_ji_su.study.sns-application-2022.secret_key
+  secret-key: com.kim_ji_su.study.sns-application-2022.secret_key
   #30 days
-  token.expired-time-ms: 2592000000
-
-
+  token:
+    expired-time-ms: 2592000000
